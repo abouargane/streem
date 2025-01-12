@@ -19,7 +19,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-st.header("Entrées de base")
+st.header("Vitesse maximale aérobie")
 v_base = st.number_input("Entrez la vitesse de base (km/h)", min_value=0.0, value=100.0)
 percentage = st.number_input("Entrez le pourcentage (%)", min_value=0.0, max_value=100.0, value=70.0)
 
