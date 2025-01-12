@@ -47,7 +47,7 @@ with col1:
     st.write(f"Distance parcourue : **{distance:.2f} mètres**")
 
 with col2:
-    st.header("Calcul du temps nécessaire")
+    st.header("Calcul de temps de passege par tour")
     distance_input = st.number_input("Entrez une distance (mètres) pour calculer le temps", min_value=0.0, value=2000.0)
     time_required = distance_input / v_m_s if v_m_s > 0 else 0
     st.write(f"Temps nécessaire : **{convert_seconds_to_time(time_required)}**")
