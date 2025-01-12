@@ -15,6 +15,10 @@ v_m_s = v_m_min / 60
 st.write(f"Vitesse calculée : {v_p:.2f} km/h")
 st.write(f"Vitesse en mètres par minute : {v_m_min:.2f}")
 st.write(f"Vitesse en mètres par seconde : {v_m_s:.2f}")
+# Nouvelle phase : Calcul du temps pour une distance au choix
+distance_choice = st.number_input("Entrez une distance au choix (mètres)", min_value=0.0, value=1000.0)
+time_for_choice_distance = distance_choice / v_m_s if v_m_s > 0 else 0
+st.write(f"Temps pour parcourir {distance_choice} mètres : {time_for_choice_distance:.2f} secondes")
 
 # Calcul de la distance parcourue
 time_min = st.number_input("Entrez le temps (minutes)", min_value=0.0, value=10.0)
