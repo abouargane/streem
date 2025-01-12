@@ -12,10 +12,32 @@ def convert_seconds_to_time(seconds):
 
 st.markdown("""
     <style>
-    .main {background-color: #f5f5f5;}
-    .stButton button {background-color: #4CAF50; color: white;}
-    .stNumberInput div {font-size: 18px;}
-    .stTextInput div {font-size: 18px;}
+    .main {
+        background-color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .stButton button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    .stNumberInput div, .stTextInput div {
+        font-size: 18px;
+        font-family: 'Arial', sans-serif;
+    }
+    .stHeader {
+        color: #4CAF50;
+        font-family: 'Arial', sans-serif;
+    }
     </style>
     """, unsafe_allow_html=True)
 
